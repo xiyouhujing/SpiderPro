@@ -38,7 +38,7 @@ def get_article_url(pageurl):
 def get_content(new_url):
     article_data = {}
 
-    html_cont = use_proxy(new_url)
+    html_cont = use_header(new_url)
     soup = BeautifulSoup(html_cont, 'html.parser', from_encoding='utf-8')
 
     title_node = soup.select('#activity-name')[0]

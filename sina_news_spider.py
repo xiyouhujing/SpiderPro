@@ -57,7 +57,7 @@ def parserlinkList(page_url):
     return newsdetails
 
 news_total = []
-for i in range(1, 5):
+for i in range(1, 2):
     page_url = root_url.format(i)
     newsary = parserlinkList(page_url)
     news_total.extend(newsary)

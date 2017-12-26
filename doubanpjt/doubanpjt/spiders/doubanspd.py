@@ -26,16 +26,16 @@ class DoubanspdSpider(scrapy.Spider):
             print u"请查看本地图片并输入验证码："
             captcha_value = raw_input()
             data = {
-                "form_email":"15827296949",
-                "form_password":"HUJINGV587FINE",
+                "form_email":"your user name",
+                "form_password":"your password",
                 "captcha_solution":captcha_value,
                 "redir":"https://www.douban.com/people/145022450/",
             }
         else:
             print u"此时没有验证码"
             data = {
-                "form_email":"15827296949",
-                "form_password":"HUJINGV587FINE",
+                "form_email":"your user name",
+                "form_password":"your password",
                 "redir":"https://www.douban.com/people/145022450/",
             }
         print u"登陆中..."
